@@ -1,0 +1,23 @@
+<div class="main">
+  <mat-card>
+    <mat-card-title>Viktoria Wehner Links</mat-card-title>
+    <mat-card-content>
+      <button mat-raised-button (click)="openLink('linkedin')">
+        <img class="link" src="../../assets/icons/linkedin.svg" alt="LinkedIn">
+      </button>
+      <button mat-raised-button (click)="openLink('viktoriassecret')">
+        <img class="link" src="../../assets/icons/secrets.svg" alt="Viktoria's Secrets">
+      </button>
+      <button mat-raised-button (click)="openLink('goodreads')">
+        <img class="link" src="../../assets/icons/goodreads.svg" alt="Goodreads">
+      </button>
+      <button mat-raised-button (click)="openLink('cv')">
+        <img class="link" src="../../assets/icons/resume.svg" alt="CV">
+      </button>
+
+      <div style="margin: 12px 0"></div>
+
+      <img [src]="profilePicUrl" id="profilepic" [ngClass]="{'profileHover': hoverOnMeBool}" (mouseover)="hoverOnMe(true)" (mouseout)="hoverOnMe(false)" (click)="contactMe()">
+    </mat-card-content>
+  </mat-card>
+</div>
